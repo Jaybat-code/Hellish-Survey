@@ -1,0 +1,54 @@
+body{
+    background-image: url(../Assets/background.jpg);
+    background-size: 100vw 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(163, 163, 219);
+}
+h1,p{
+    color: #f9ffff;
+    text-align: center;
+    margin:2em 0 0 0
+}
+#description{
+    margin-top: 5px;
+    color: rgb(197, 174, 131);
+}
+#survey-form{
+    background-color: blanchedalmond;
+    margin:2em auto;
+    width: 600px;
+    min-width: 500px;
+    opacity: .8;
+}
+fieldset{
+    display: grid;
+    border:5px solid rgb(182, 109, 109)
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+input,textarea,select{
+    margin:10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+input[type="submit"]{
+    width: 400px;
+    margin-bottom: 5px;
+    margin-left: 7.5em;
+}
+legend{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+
+.checkline{
+    display: flex;
+    justify-content:flex-start;
+    font-size: small;
+}
+.item{
+    margin:0 5px;
+}
