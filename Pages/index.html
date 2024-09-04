@@ -13,21 +13,21 @@
         <form method="get" action="./submit.html" id="survey-form">
             <fieldset>
                 <legend>Please Input Your Information.</legend>
-                <label for="name-label">Full Name<input placeholder="Full Name Here" id="name-label" type="text" required minlength="3"> </label>
-                <label for="email-label">Email<input placeholder="Email Here" type="email" id="email-label" required> </label>
-                <label for="number-label">How Many Pizzas Would You Like To Order?<input placeholder="Number of Pizzas" id="number-label" type="number" min="1" max="2"> </label>
+                <label for="name-label" id="name-label">Full Name<input placeholder="Full Name Here" id="name" type="text" required minlength="3"> </label>
+                <label for="email-label" id="email-label">Email<input placeholder="Email Here" type="email" id="email" required> </label>
+                <label for="number-label" id="number-label">How Many Pizzas Would You Like To Order?<input placeholder="Number of Pizzas" id="number" type="number" min="1" max="2"> </label>
             </fieldset>
             <fieldset>
                 <legend>Useless Facts About You: </legend>
-                <label for="crimes">Why Are You In Hell?</label><select required name="crimes" id="crimes">
+                <label for="crimes">Why Are You In Hell?</label><select required name="crimes" id="dropdown">
                     <option value="1">(pick one)</option>
                     <option value="2">Taking the last bite</option>
                     <option value="3">Being Greedy</option>
                     <option value="4">Walking too slow</option>                    
                 </select>
                 <label class="checklin" for="tempoperm" margin-bottom="5px">How Long Is Your Stay
-                    <input class="item" checked  type="radio" name="tempoperm" id="Annual">A Year
-                    <input class="item"  type="radio" name="tempoperm" id="Forever">All Eternity
+                    <input class="item" checked value="Annual"  type="radio" name="tempoperm" id="Annual">A Year
+                    <input class="item" value="Forever" type="radio" name="tempoperm" id="Forever">All Eternity
                 </label>
             </fieldset>
             <fieldset class="checkline">
@@ -41,7 +41,7 @@
             </fieldset>
             <fieldset><textarea placeholder="Questions Comments and Concerns?"></textarea></fieldset>
             
-            <input type="submit" value="submit">
+            <input id="submit" type="submit" value="submit">
 
         </form>
     </main>
